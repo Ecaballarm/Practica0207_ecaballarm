@@ -3,11 +3,11 @@
 # mensaje por pantalla informando de ello.
 
 def tabla_multiplicar(n):
-    nombre_fichero = 'tabla-' + str(n) + '.txt'
-    fichero = open(nombre_fichero, 'r')
-    for n in range(1,11):
+    if n in range(1,10):
+        nombre_fichero = 'tabla-' + str(n) + '.txt'
+        fichero = open(nombre_fichero, 'r')
         print(fichero.read())
-    if n != (1, 2, 3, 4, 5, 6, 7, 8, 9, 10):
+    else:
         print("No existe ese fichero.")
     return
 n = int(input("Escriba un número del 1 al 10: "))
