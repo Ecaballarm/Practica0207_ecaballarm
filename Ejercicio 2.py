@@ -3,7 +3,7 @@
 # mensaje por pantalla informando de ello.
 
 def tabla_multiplicar(n):
-    if n in range(1,10):
+    if n in range(1,11):
         nombre_fichero = 'tabla-' + str(n) + '.txt'
         fichero = open(nombre_fichero, 'r')
         print(fichero.read())
